@@ -48,7 +48,7 @@ class parse {
 		$eq = str_replace('(', ' ', $eq);
 		$eq = str_replace(')', ' ', $eq);
 		// the parantheses indicate what to replace
-		$output = preg_replace(" ([0-9\-\=\/\+\*\^\,]+) ", ' ', $eq);
+		$output = preg_replace(" ([0-9\-\=\/\+\*\^\,\.]+) ", ' ', $eq);
 		//$output = preg_replace("[^a-zA-Z0-9]",' ',$eq);
 		// echo $output;
 		$arr = explode(" ", $output);
